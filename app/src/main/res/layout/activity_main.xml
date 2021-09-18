@@ -22,19 +22,19 @@
 
 
         <RadioGroup
-            android:id="@+id/user_choice_radioGroup"
+            android:id="@+id/user_choice_radio_group"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <RadioButton
-                android:id="@+id/celsius_radiobutton"
+                android:id="@+id/celsius_radio_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Цельсий -> Фаренгейт"
                 android:checked="true"/>
 
             <RadioButton
-                android:id="@+id/fahrenheit_radiobutton"
+                android:id="@+id/fahrenheit_radio_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Фаренгейт -> Цельсий" />
@@ -42,7 +42,7 @@
 
 
         <EditText
-            android:id="@+id/temperature_edittext_view"
+            android:id="@+id/temperature_edittext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Введите температуру"

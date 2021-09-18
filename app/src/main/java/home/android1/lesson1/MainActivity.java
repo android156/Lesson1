@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView result;
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private double convertTemperature(double user_temperature, int radio_button_id) {
-        if (radio_button_id == R.id.celsius_radiobutton)
+        if (radio_button_id == R.id.celsius_radio_button)
             return (user_temperature * 1.8 + 32);
         return (user_temperature - 32) / 1.8;
     }
@@ -32,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         result = findViewById(R.id.result_text_view);
-        temperature = findViewById(R.id.temperature_edittext_view);
+        temperature = findViewById(R.id.temperature_edittext);
         button = findViewById(R.id.button);
-        radioGroup = findViewById(R.id.user_choice_radioGroup);
+        radioGroup = findViewById(R.id.user_choice_radio_group);
 
 
         button.setOnClickListener(new View.OnClickListener() {
